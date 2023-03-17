@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Etch-a-Sketch</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="etch-a-sketch.js" defer></script>
+    </head>
+    <body>
+         <div class="container">
+            <div class="title"><h1>Etch-a-Sketch</h1></div>
+            <div class="content">   
+                <div class="board"></div>
+                <div class="buttons">
+                    <button>Black</button>
+                    <button>White</button>
+                    <button>Random</button>
+                    <button>Reset</button>
+                </div>
+                <div>
+                    <input 
+                        type="text" 
+                        placeholder="Number from 1-100" 
+                        value="16" 
+                        onchange="changeSize(this.value)"
+                    >
+                    <button>Grid Size</button>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="drawing-app.js"></script>
+</html>
