@@ -7,11 +7,9 @@ function populateBoard(size){
 
     for(let i = 0; i < size*size; i++) {
         let square = document.createElement('div');
-        square.addEventListener("mouseover", () => {
-            square.style.backgroundColor = "black"
-        });
-        square.style.backgroundColor = "teal";
+        square.style.backgroundColor = "white";
         board.insertAdjacentElement("beforeend", square);
+        square.addEventListener("mouseover", colourSquare);
     }
 }
 populateBoard(16);
@@ -23,4 +21,8 @@ function changeSize(input) {
     } else {
         console.log("Invalid input number!");
     }
+}
+
+function colourSquare() {
+    this.style.backgroundColor = "black";
 }
