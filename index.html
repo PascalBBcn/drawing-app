@@ -9,13 +9,14 @@
     <body>
          <div class="container">
             <div class="title"><h1>Etch-a-Sketch</h1></div>
+            <div class="mode">Mode: Colouring</div>
             <div class="content">   
                 <div class="board"></div>
                 <div class="buttons">
-                    <button>Black</button>
-                    <button>White</button>
-                    <button>Random</button>
-                    <button>Reset</button>
+                    <button onclick="changeColour('black')">Black</button>
+                    <button onclick="changeColour('white')">Eraser</button>
+                    <button onclick="changeColour('random')">Random</button>
+                    <button onclick="resetBoard()">Reset</button>
                 </div>
                 <div>
                     <input 
