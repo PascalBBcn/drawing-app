@@ -25,8 +25,47 @@
     align-items: center;
     min-width: 300px;
     min-height: 300px;
-    height: 60vh;
+    height: 60vw;
     width: 60vw;
-    max-width: 500px;
-    max-height: 500px;
+    max-width: 600px;
+    max-height: 600px;
+}
+
+.buttons {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 0.3em 1.2em;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 2em;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.randomButton {
+    background: linear-gradient(0.25turn, #f65cfc, #ebf8e1, #583cf6);
+}
+.randomButton:hover {
+    background: linear-gradient(0.25turn, #20ff02, #ebf8e1, #aecc03);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: gray;
+}
+
+input {
+    width: 50px;
+}
+
+.mode {
+    margin-bottom: 5px;
+    font-style: italic;
+}
+
+.error {
+    display: none;
 }

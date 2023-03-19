@@ -15,13 +15,13 @@
                 <div class="buttons">
                     <button onclick="changeColour('black')">Black</button>
                     <button onclick="changeColour('white')">Eraser</button>
-                    <button onclick="changeColour('random')">Random</button>
+                    <button class="randomButton" onclick="changeColour('random')">Random</button>
                     <button onclick="resetBoard()">Reset</button>
                 </div>
                 <div>
                     <input 
                         type="text" 
-                        placeholder="Number from 1-100" 
+                        placeholder="Number" 
                         value="16" 
                         onchange="changeSize(this.value)"
                     >
